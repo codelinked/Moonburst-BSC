@@ -1,0 +1,54 @@
+.timer {
+  font-family: 'Handjet';
+  margin: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  width: fit-content;
+}
+
+.timer .flipdown {
+  margin: auto;
+  text-align: center;
+}
+
+/* labels below */
+
+.flipdown.flipdown__theme-dark .rotor-group-heading:before {
+  color: white;
+  font-size: 30px;
+}
+
+@media (max-width: 550px) {
+  .flipdown.flipdown__theme-dark .rotor-group-heading:before {
+    color: white;
+    font-size: 20px;
+  }
+}
+
+.rotor-group-heading {
+  margin-bottom: 10px;
+}
+
+/* lower numbers */
+
+.flipdown.flipdown__theme-dark .rotor-bottom, .flipdown.flipdown__theme-dark .rotor-leaf-rear {
+  color: #96FE12;
+  background-color: #000000;
+}
+
+/* upper numbers */
+
+.flipdown.flipdown__theme-dark .rotor, .flipdown.flipdown__theme-dark .rotor-top, .flipdown.flipdown__theme-dark .rotor-leaf-front {
+  color: #96FE12;
+  background-color: #000000;
+}
+
+/* colons */
+
+.flipdown.flipdown__theme-dark .rotor-group:nth-child(n + 2):nth-child(-n + 3):before, .flipdown.flipdown__theme-dark .rotor-group:nth-child(n + 2):nth-child(-n + 3):after {
+  background-color: #000000;
+}
+
+/* # sourceMappingURL=style.css.map */
+

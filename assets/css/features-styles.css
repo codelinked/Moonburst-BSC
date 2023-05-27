@@ -1,0 +1,86 @@
+#features {
+  background: black;
+  position: relative;
+  z-index: 0;
+}
+
+.row {
+  --bs-gutter-x: 5rem;
+}
+
+.token {
+  background: black;
+  color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 30px auto;
+}
+
+.token::before {
+  content: '';
+  position: absolute;
+  margin-left: 2px;
+  width: 310px;
+  height: 310px;
+  border-radius: 100%;
+  transform-origin: 48% 50%;
+  z-index: -1;
+  filter: blur(7.5px);
+  animation: rotationInfinite 3s infinite linear;
+}
+
+.red::before {
+  background: red;
+}
+
+.yellow::before {
+  background: yellow;
+}
+
+.green::before {
+  background: green;
+}
+
+.title {
+  font-family: 'Faster One Regular';
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  line-height: 60px;
+  margin: 0 auto;
+}
+
+.title.red {
+  color: #ff0f00;
+}
+
+.title.yellow {
+  color: #ffe500;
+}
+
+.title.green {
+  color: #05FF00;
+  margin-top: 20px;
+}
+
+.subtitle {
+  font-family: 'Geo';
+  font-size: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subtitle .buysell {
+  font-size: 40px;
+}
+
+.subtitle .gomu {
+  margin-top: -20px;
+  font-size: 25px;
+}
+

@@ -1,0 +1,59 @@
+.asteroid1 {
+  background: url("../../assets/img/asteroid1.png") no-repeat;
+  animation-duration: 300s;
+  animation-delay: 10s;
+  width: 20%;
+  top: 100%;
+  left: 0;
+}
+
+.asteroid2 {
+  background: url("../../assets/img/asteroid2.png") no-repeat;
+  animation-duration: 300s;
+  animation-delay: 20s;
+  width: 20%;
+  top: 50%;
+  left: -50%;
+}
+
+.ufo {
+  background: url("../../assets/img/ufospaceship.png") no-repeat;
+  animation-duration: 40s;
+  animation-delay: 5s;
+  width: 15%;
+  top: 0;
+  left: 50%;
+}
+
+.amongus {
+  background: url("../../assets/img/impostor-ejected.png") no-repeat;
+  animation-duration: 200s;
+  animation-delay: 20s;
+  width: 5%;
+  top: 50%;
+  left: 0;
+}
+
+.space-objects {
+  height: 100%;
+  background-size: contain;
+  animation-name: object-fly-random;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.rocket {
+  background: url("../../assets/img/spacerocket.png") no-repeat;
+  background-size: contain;
+  animation-name: object-fly-linear;
+  animation-duration: 25s;
+  animation-delay: 10s;
+  width: 10%;
+  top: 0;
+  left: 0;
+}
+
